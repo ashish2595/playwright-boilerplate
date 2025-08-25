@@ -1,5 +1,6 @@
 import { defineConfig, devices } from '@playwright/test';
 import { baseURL } from './config/setConfig';
+import type { PlaywrightTestConfig } from "@playwright/test";
 
 /**
  * Read environment variables from file.
@@ -23,7 +24,17 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: process.env.CI === 'true' ? 'list' : [['html', { open: 'never' }]],
+  reporter: [
+    ['html', { open: 'never' }],
+    [
+      "allure-playwright",
+      {
+        resultsDir: "results/allure-results",
+        detail: true,
+        suiteTitle: true
+      },
+    ],
+  ],
   /* Timeouts */
   expect: {
     timeout: 10_000
