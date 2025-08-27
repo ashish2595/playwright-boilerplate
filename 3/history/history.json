@@ -1,0 +1,1 @@
+{"2ce02932e70468143a84c40ae8e53353:5bd835b0d6b1d4ada3b9f0db936e82c8":{"statistic":{"failed":0,"broken":0,"skipped":0,"passed":1,"unknown":0,"total":1},"items":[{"uid":"9364749c7cf3a2a8","reportUrl":"https://ashish2595.github.io/playwright-boilerplate/3//#testresult/9364749c7cf3a2a8","status":"passed","time":{"start":1756286640825,"stop":1756286644646,"duration":3821}}]}}
