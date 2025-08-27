@@ -44,3 +44,6 @@
 │           └── login/
 │               └── login.data.ts
 ```
+
+## Sample Allure report
+[Click here to view Allure Report on Github Pages](https://ashish2595.github.io/playwright-boilerplate)
