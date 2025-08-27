@@ -15,12 +15,15 @@ export class AllTicketsPage {
     #searchInput = () => this.page.locator('[data-testid="ticket-name-search"]');
     #textTicketStatus = (tickeName: string) => this.page.locator(`//*[normalize-space()="${tickeName}"]/ancestor::*[starts-with(@class,"border")]//*[@data-testid="ticket-status"]`);
 
+    async navigate(organization: string) {
+        await this.page.goto(organization + '/tickets');
+    }
+
     async searchTicket(ticketName: string) {
         await this.#searchInput().fill(ticketName);
     }
 
     async verifyTicketStatus(ticketName: string, ticketStatus: TicketStatus) {
-        await this.#searchInput().fill(ticketName);
         await expect(this.#textTicketStatus(ticketName)).toHaveText(ticketStatus);
     }
 }

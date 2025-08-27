@@ -1,6 +1,5 @@
 import { test as base, expect } from "@playwright/test";
 import { LoginPage } from "../tests/pageObjects/login/login.page";
-import fs from "fs";
 import path from "path";
 import { AllTicketsPage } from "../tests/pageObjects/tickets/allTickets.page";
 
