@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Aug 27 12:49:09 GMT 2025","Wed Aug 27 12:49:12 GMT 2025","2946","chromium","login/login.spec.ts","","","","@login : Verify valid user login",""
+"passed","Wed Aug 27 12:49:12 GMT 2025","Wed Aug 27 12:49:16 GMT 2025","3777","chromium","tickets/tickets.spec.ts","","","","@tickets : Verify search ticket",""
