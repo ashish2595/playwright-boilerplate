@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Aug 27 18:09:30 GMT 2025","Wed Aug 27 18:09:33 GMT 2025","2234","firefox","tickets/tickets.spec.ts","","","","@tickets : Verify search ticket",""
+"passed","Wed Aug 27 18:09:12 GMT 2025","Wed Aug 27 18:09:15 GMT 2025","2885","setup","auth.setup.ts","","","","authenticate",""
+"passed","Wed Aug 27 18:09:21 GMT 2025","Wed Aug 27 18:09:24 GMT 2025","2464","webkit","tickets/tickets.spec.ts","","","","@tickets : Verify search ticket",""
+"passed","Wed Aug 27 18:09:17 GMT 2025","Wed Aug 27 18:09:21 GMT 2025","3634","webkit","login/login.spec.ts","","","","@login : Verify valid user login",""
+"passed","Wed Aug 27 18:09:24 GMT 2025","Wed Aug 27 18:09:25 GMT 2025","857","chromium","login/login.spec.ts","","","","@login : Verify valid user login",""
+"passed","Wed Aug 27 18:09:25 GMT 2025","Wed Aug 27 18:09:27 GMT 2025","1981","chromium","tickets/tickets.spec.ts","","","","@tickets : Verify search ticket",""
+"passed","Wed Aug 27 18:09:28 GMT 2025","Wed Aug 27 18:09:30 GMT 2025","1801","firefox","login/login.spec.ts","","","","@login : Verify valid user login",""
