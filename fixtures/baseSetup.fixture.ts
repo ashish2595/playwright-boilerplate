@@ -1,21 +1,17 @@
 import { test as base, expect } from "@playwright/test";
 import { LoginPage } from "../tests/pageObjects/login/login.page";
-import fs from "fs";
 import path from "path";
+import { AllTicketsPage } from "../tests/pageObjects/tickets/allTickets.page";
 
 type Options = {
     testDataPath: string;
     keyName: string;
     testData: any;
     loginPage: LoginPage;
-
+    allTicketsPage: AllTicketsPage;
 };
 
 export const test = base.extend<Options>({
-    loginPage: async ({ page }, use) => {
-        await use(new LoginPage(page));
-    },
-
     testDataPath: ["", { option: true }],
     keyName: ["", { option: true }],
 
@@ -32,6 +28,12 @@ export const test = base.extend<Options>({
             data = parsedData[keyName];
         }
         await use(data);
+    },
+    loginPage: async ({ page }, use) => {
+        await use(new LoginPage(page));
+    },
+    allTicketsPage: async ({ page }, use) => {
+        await use(new AllTicketsPage(page));
     },
 });
 
